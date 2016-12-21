@@ -140,3 +140,6 @@ netmon:
         extended:
             name: Extended
             descr: Extended hours, 7 days a week
+        none:
+            name: None
+            descr: None

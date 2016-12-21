@@ -4,7 +4,7 @@
 # CONTACTS
 contacts.update(
 {'omdadmin': {'alias': 'omdadmin'},
-{% for contact in contacts|sort %}
+{% for contact in omdistro_contacts|sort %}
  '{{ contact.name }}' : { 'alias': u'{{ contact.alias }}',
                           'contactgroups': [ "{{ contact.contactgroups|join('\", \"') }}" ],
                           'email': '{{ contact.email }}',
@@ -17,4 +17,3 @@ contacts.update(
                           'notification_method': ( 'flexible'
 {% endfor %}
 })
-
